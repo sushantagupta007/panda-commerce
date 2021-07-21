@@ -1,0 +1,73 @@
+/* Small Card section */
+/* .rounded{
+    border-radius:25%important; 
+} */
+
+/* Common clas */
+.priceColor{
+    color:#FF136F;
+}
+
+.BackgroundColor{
+    background-color: #fceae8;
+}
+
+.carousel_btn_BackgroundColor{
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+    color:#ffffff;
+}
+
+.smallCardImageSize{
+    height:100px;
+}
+#smallCardBackGround1{
+    background: orange;
+}
+#smallCardBackGround2{
+    background: orchid;
+}
+#smallCardBackGround3{
+    background: blue;
+}
+
+.carousel-item img{
+    width:100%;
+}
+
+.carouselArrow{
+    width:20px !important;
+    height: 20px !important;
+    font-weight: 800 !important;
+    color:white !important
+}
+.btnSizeDesktop{
+    width:25%;
+}
+.borderRounded{
+    border-radius: 10px;
+}
+
+.btnSize{
+    width:10%;
+}
+
+/* Responsive Mobile */
+/* Iphone 6/7/8 */
+@media only screen and (max-width: 375px){
+   #touchContainer p{
+       font-size: 15px;
+     }
+}
+
+@media only screen and (min-width: 576px){
+    .btnSizeMobile{
+        width:100%; 
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+    .btnSizeTablet{
+      width:100%;
+      }
+}
