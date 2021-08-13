@@ -12,5 +12,5 @@ const cards= document.getElementsByClassName('card shadow');
 
 
 for(const card of cards){
-    card.style.border="30px solid black"; 
+    card.style.border="30px"; 
 }
