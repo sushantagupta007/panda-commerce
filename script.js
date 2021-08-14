@@ -67,7 +67,7 @@ document.getElementById('image-changed').addEventListener('mouseleave',function(
 
 //7.Use of Event Bubbling 
 const letmeTouch = document.getElementById('let-me-touch');
-letmeTouch.addEventListener('click',function(event){
+letmeTouch.addEventListener('dblclick',function(event){
     event.target.style.backgroundColor="blue";
     event.stopPropagation();
     console.log("hi"); 
