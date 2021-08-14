@@ -71,6 +71,7 @@
                       btnSizeDesktop
                       btnSizeTablet
                       carousel_btn_BackgroundColor
+                      btnRemove
                     ">
                   Buy Now
                 </button>
@@ -100,6 +101,7 @@
                       btnSizeMobile
                       btnSizeDesktop
                       carousel_btn_BackgroundColor
+                      btnRemove
                     ">
                   Buy Now
                 </button>
@@ -129,6 +131,7 @@
                       btnSizeMobile
                       btnSizeDesktop
                       carousel_btn_BackgroundColor
+                      btnRemove
                     ">
                   Buy Now
                 </button>
@@ -214,9 +217,11 @@
                 <button class="
                       carousel_btn_BackgroundColor
                       rounded
-                      btn
+                      btn 
                       btnSizeTablet
                       text-white
+                      btnRemove
+                      
                     ">
                   Buy Now <i class="fas fa-angle-double-right"></i>
                 </button>
@@ -239,6 +244,7 @@
                       rounded
                       btnSizeTablet
                       text-white
+                      btnRemove
                     ">
                   Buy Now <i class="fas fa-angle-double-right"></i>
                 </button>
@@ -261,6 +267,7 @@
                       rounded
                       btnSizeTablet
                       text-white
+                      btnRemove
                     ">
                   Buy Now <i class="fas fa-angle-double-right"></i>
                 </button>
@@ -271,8 +278,8 @@
         <h3 class="fw-bold mt-5">Backpack</h3>
         <div id="backPack" class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col-lg-4 buyNow-Container">
-            <div class="card shadow">
-              <img src="./images/bags/bag-1.png" class="card-img-top" alt="Shoe" />
+            <div id="image-change-parent"class="card shadow">
+              <img id="image-changed" src="./images/bags/bag-1.png" class="card-img-top" alt="Shoe" />
               <div class="card-body">
                 <h5 class="card-title">Red Bag</h5>
                 <h5 class="card-title">$120</h5>
@@ -287,6 +294,7 @@
                       rounded
                       btnSizeTablet
                       text-white
+                      btnRemove
                     ">
                   Buy Now <i class="fas fa-angle-double-right"></i>
                 </button>
@@ -309,6 +317,7 @@
                       rounded
                       btnSizeTablet
                       text-white
+                      btnRemove
                     ">
                   Buy Now <i class="fas fa-angle-double-right"></i>
                 </button>
@@ -331,6 +340,7 @@
                       rounded
                       btnSizeTablet
                       text-white
+                      btnRemove
                     ">
                   Buy Now <i class="fas fa-angle-double-right"></i>
                 </button>
@@ -340,13 +350,13 @@
         </div>
       </div>
     </section>
-    <aside class="container rounded BackgroundColor p-5">
-      <div class="d-flex flex-column justify-content-center align-items-center">
+    <aside id="let-me-touch" class="container rounded BackgroundColor p-5">
+      <div id="touchContainer" class="d-flex flex-column justify-content-center align-items-center">
         <h2>LET'S STAY IN TOUCH</h2>
-        <div id="touchContainer">
+        <div >
           <p style="color: gray">Get updates on sales, specials and more</p>
-          <input type="text" class="bg-white border form-control" />
-          <button type="button" class="btn carousel_btn_BackgroundColor">
+          <input id="input-email" type="text" class="bg-white border form-control" />
+          <button id="submitButton" type="button" class="btn carousel_btn_BackgroundColor" disabled>
             Submit
           </button>
         </div>
