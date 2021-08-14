@@ -1,11 +1,11 @@
-//Selelction of H2 and set color light blule
+ //1. Selelction of H2 and set color light blule
 const h2Tag = document.getElementsByTagName('h2');
 //console.log(typeof h2Tag);
 
 for(const h2 of h2Tag){
     h2.style.color="lightblue";  
 }
-//Selection of BackPack and set Background color tomato
+//2.Selection of BackPack and set Background color tomato
 const backPack = document.getElementById('backPack'); 
 backPack.style.backgroundColor = "tomato"; 
 
@@ -16,7 +16,7 @@ for(const card of cards){
     card.style.border="30px"; 
 }
 
-//Selection of buttons and remove it by click
+//3.Selection of buttons and remove it by click
 const buttons = document.getElementsByClassName('btnRemove');
 for(const button of buttons){
     button.addEventListener('click',function (event) {
@@ -25,7 +25,7 @@ for(const button of buttons){
     })
 }
 
-//Sumbit button disable and enable 
+//4. Sumbit button disable and enable 
 document.getElementById('input-email').addEventListener('keyup',function(event){
     console.log(event.target.value);
     if(event.target.value=='email'){
@@ -39,7 +39,7 @@ document.getElementById('input-email').addEventListener('keyup',function(event){
     
 });
 
-//Let Me Toch on Focus of input field 
+//5.Let Me Toch on Focus of input field 
 document.getElementById('input-email').addEventListener('focus',function(){
     document.getElementById('let-me-touch').style.backgroundColor="yellow";
 });
@@ -48,7 +48,7 @@ document.getElementById('input-email').addEventListener('blur',function(){
     document.getElementById('let-me-touch').style.backgroundColor="purple";
 });
 
-//Image Change
+//6.Image Change
 document.getElementById('image-changed').addEventListener('mouseenter',function(){
     //Selection of parent and then child
     const parent = document.getElementById('image-change-parent');
@@ -57,8 +57,15 @@ document.getElementById('image-changed').addEventListener('mouseenter',function(
     childofParent[1].src= "./images/bags/bag-2.png";
 });
 
+document.getElementById('image-changed').addEventListener('mouseleave',function(){
+    //Selection of parent and then child
+    const parent = document.getElementById('image-change-parent');
+    const childofParent = parent.childNodes;
+    //Selectioni of index of image and set new src
+    childofParent[1].src= "./images/bags/bag-3.png";
+});
 
-//Use of Event Bubbling 
+//7.Use of Event Bubbling 
 const letmeTouch = document.getElementById('let-me-touch');
 letmeTouch.addEventListener('click',function(event){
     event.target.style.backgroundColor="blue";
